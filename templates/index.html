@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 style="color: bisque; font-family: fantasy; text-align: center; padding: 3%; background-color: black;">hello
+        world teacher</h1>
+    <h2>{{usu}}</h2>
+
+    {% if usu %}
+    <h2>Información del Usuario:</h2>
+    <ul>
+        <li><strong>Rol:</strong> {{ usu[0] }}</li>
+        <li><strong>Teléfono:</strong> {{ usu[1] }}</li>
+        <li><strong>Correo Electrónico:</strong> {{ usu[2] }}</li>
+        <li><strong>Nombre:</strong> {{ usu[3] }}</li>
+    </ul>
+    {% else %}
+    <p>No se han enviado datos.</p>
+    {% endif %}
+    <a href="/formulario">volver al formulario</a>
+</body>
+
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario</title>
+
+    <style>
+        .formu {
+            text-align: right;
+            padding: 6%;
+            background-color: aquamarine;
+            border: 2px solid rebeccapurple;
+        }
+    </style>
+</head>
+
+<body>
+
+    <form action="respuesta" method="post" class="formu">
+        <h1 style="font-family: 'Courier New', Courier, monospace; font-size: 400%;">EJERCISIO DE SUMA CON PYTHON</h1>
+        <label for="nombre">digite un numero</label><br>
+        <input type="number" name="n1" id="n1" placeholder="numero 1"><br>
+        <label for="nombre">digite un segundo numero</label><br>
+        <input type="number" name="n2" id="n2" placeholder="numero 2"><br>
+        <input type="submit" value="sumar">
+    </form>
+    <h3>respuesta: {{res}}</h3>
+    <hr>
+    <form action="nombres" method="post" class="formu">
+        <label for="nombre">ingrese su nombre</label>
+        <input type="text" name="name" id="name" placeholder="nombre"><br><br>
+        <label for="rol">ingrese su rol</label>
+        <input type="text" name="rol" id="rol" placeholder="rol"><br><br>
+        <label for="telefono">ingrese su telefono</label>
+        <input type="number" name="tel" id="tel" placeholder="telefono"><br><br>
+        <label for="correo">ingrese su correo</label>
+        <input type="email" name="mail" id="mail" placeholder="correo"><br>
+        <input type="submit" value="submit">
+    </form>
+</body>
+
+</html>
